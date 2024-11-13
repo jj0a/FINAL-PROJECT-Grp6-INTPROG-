@@ -1,14 +1,16 @@
-* {
+/*Overall, our signup design is same as on login design it's just that hinde sya naka popup to the main page. nasa ibang page sya*/
+* { /*Universal selector which means this is something our default style to all. It selects all elements on the page, meaning any style applied to * will affect every element in the document.*/
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body{
+body{ /*Our website body design*/
     background: linear-gradient(to right, #3a7bd5, #3a6073);
     font-family: "Raleway",sans-serif;
 }
 
+/*Our signup design starts here*/
 .popup {
     position: absolute;
     top: 50%; /* Changed */
@@ -23,7 +25,7 @@ body{
 }
 
 
-.popup .close-btn{
+.popup .close-btn{  /*For close button design*/
      position: absolute;
      top: 10px;
      right:10px;
@@ -35,6 +37,7 @@ body{
      border-radius: 15px;
      cursor: pointer;
 }
+
 
 .popup .form h1{
     text-align: center;
@@ -106,7 +109,7 @@ small {
     display: block;
     text-align: center;
 }
-
+/*Our signup design starts here*/
 @media(max-width: 836px) {
     .popup {
         width: 400px;
