@@ -3,36 +3,22 @@
 const hamburger = document.querySelector('.hamburger');  //Initialization for hamburger
 const navbar = document.querySelector('.navbar');        //Initialization for navbar
 
-const showContainer1 = document.getElementById('show-container1');
-const joanne = document.getElementById('joanne');
-const showContainer2 = document.getElementById('show-container2');
-const monica = document.getElementById('monica');
-const showContainer3 = document.getElementById('show-container3');
-const danielle = document.getElementById('danielle');
-const showContainer4 = document.getElementById('show-container4');
-const angel = document.getElementById('angel');
-const showContainer5 = document.getElementById('show-container5');
-const reymark = document.getElementById('reymark');
-const showContainer6 = document.getElementById('show-container6');
-const karl = document.getElementById('karl');
-
-
+/*Navbar responsiveness starts here*/
 hamburger.addEventListener('click', () => {             //Once the hamburder is click the navbar wil open and it will display as X
     navbar.classList.toggle('nav--open');              
     hamburger.classList.toggle('hamburger--open');
 });
+/*Navbar responsiveness ends here*/
 
-
+//Initialization for Others section. Others section starts here.
 //Ito yung to show the others section
 const showOthersLink = document.getElementById('show-others');
 const othersSection = document.querySelector('.others');
-const showProfileLink = document.getElementById('show-profile');
-const profileSection = document.querySelector('.profile');  //once the profile is click profile will be seen
 
 //Once others in navbar is click, others will be visible and the other navbar section will be invisible
 showOthersLink.addEventListener('click', (e) => {          
-    othersSection.classList.toggle('others--visible');
-    profileSection.classList.remove('profile--visible');
+    othersSection.classList.toggle('others--visible');  //This part where it has toggle this is responsible for showing the others section
+    profileSection.classList.remove('profile--visible');  //This part where it has .remove this is responsible for removing the visibility of ibang naka open na section
     joanne.classList.remove('container-details--open');
     joanne.classList.remove('container-details--open');
     monica.classList.remove('container-details--open');
@@ -41,6 +27,9 @@ showOthersLink.addEventListener('click', (e) => {
     reymark.classList.remove('container-details--open');
     karl.classList.remove('container-details--open');
 });
+
+const showProfileLink = document.getElementById('show-profile');
+const profileSection = document.querySelector('.profile');  //once the profile is click profile will be seen
 
 //This is naman to show the profile information
 showProfileLink.addEventListener('click', (e) => {
@@ -55,9 +44,22 @@ showProfileLink.addEventListener('click', (e) => {
     karl.classList.remove('container-details--open');
 });
 
+//Initialization for showing the knowledge status. Overall, this code is responsible for the control behaviour of showing the knowledge status
+const showContainer1 = document.getElementById('show-container1');  
+const joanne = document.getElementById('joanne');
+const showContainer2 = document.getElementById('show-container2');
+const monica = document.getElementById('monica');
+const showContainer3 = document.getElementById('show-container3');
+const danielle = document.getElementById('danielle');
+const showContainer4 = document.getElementById('show-container4');
+const angel = document.getElementById('angel');
+const showContainer5 = document.getElementById('show-container5');
+const reymark = document.getElementById('reymark');
+const showContainer6 = document.getElementById('show-container6');
+const karl = document.getElementById('karl');
 
 //Show joanne's web development knowledge
-showContainer1.addEventListener('click', () => {
+showContainer1.addEventListener('click', () => {  //Once Joanne members button is click the its knowledge status is shown and the other open section is remove
     profileSection.classList.remove('profile--visible');
     joanne.classList.toggle('container-details--open'); // Toggle the visibility of Joanne's details
     othersSection.classList.remove("others--visible"); //Once the button is click this will be remove the others(so if open to and you click the button wala ng mag overflow)
@@ -69,7 +71,7 @@ showContainer1.addEventListener('click', () => {
 });
 
 //Show Monica web development knowledge
-showContainer2.addEventListener('click', () => {
+showContainer2.addEventListener('click', () => {   //Once Monica members button is click the its knowledge status is shown and the other open section is remove
     monica.classList.toggle('container-details--open');
     profileSection.classList.remove('profile--visible');
     othersSection.classList.remove("others--visible");
@@ -81,7 +83,7 @@ showContainer2.addEventListener('click', () => {
 });
 
 //danielle
-showContainer3.addEventListener('click', () => {
+showContainer3.addEventListener('click', () => { //Once Danielle members button is click the its knowledge status is shown and the other open section is remove
     profileSection.classList.remove('profile--visible');
     othersSection.classList.remove("others--visible");
     danielle.classList.toggle('container-details--open');
@@ -93,7 +95,7 @@ showContainer3.addEventListener('click', () => {
 });
 
 //angel
-showContainer4.addEventListener('click', () => {
+showContainer4.addEventListener('click', () => {  //Once Angel members button is click the its knowledge status is shown and the other open section is remove
 profileSection.classList.remove('profile--visible');
 othersSection.classList.remove("others--visible");
 angel.classList.toggle('container-details--open');
@@ -105,7 +107,7 @@ karl.classList.remove('container-details--open');
 });
 
 //reymark
-showContainer5.addEventListener('click', () => {
+showContainer5.addEventListener('click', () => { //Once Reymark members button is click the its knowledge status is shown and the other open section is remove
 profileSection.classList.remove('profile--visible');
 othersSection.classList.remove("others--visible");
 reymark.classList.toggle('container-details--open');
@@ -117,7 +119,7 @@ karl.classList.remove('container-details--open');
 });
 
 //karl
-showContainer6.addEventListener('click', () => {
+showContainer6.addEventListener('click', () => { //Once karl members button is click the its knowledge status is shown and the other open section is remove
 profileSection.classList.remove('profile--visible');
 othersSection.classList.remove("others--visible");
 karl.classList.toggle('container-details--open');
