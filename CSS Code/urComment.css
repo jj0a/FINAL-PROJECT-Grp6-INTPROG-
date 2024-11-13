@@ -1,4 +1,4 @@
-* {
+* { /*Applied to all meaning we have a defined margin 0 and padding 0 and box-sizing border-box applied to all of our comment section.*/
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -9,17 +9,17 @@ body{
 }
 /* Popup container styles */
 .popup-urComment {
-    position: relative; /* Relative, not fixed */
-    width: 90%; /* Make it responsive */
-    max-width: 600px; /* Limit the width */
-    margin: 50px auto; /* Center horizontally with margin */
+    position: relative; 
+    width: 90%; 
+    max-width: 600px; 
+    margin: 50px auto; 
     padding: 20px 30px;
     background: #fff;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     border: 1px solid rgb(48, 47, 47);
-    height: auto; /* Auto height to fit the content */
-    overflow-y: auto; /* Allow the content to scroll if needed */
+    height: auto; 
+    overflow-y: auto; 
 }
 
 /* Close button styles */
@@ -27,53 +27,54 @@ body{
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 30px; /* Increase size for better visibility */
+    width: 30px; 
     height: 30px;
-    background: #888; /* Background color */
-    color: #fff; /* Text color */
+    background: #888;
+    color: #fff; 
     text-align: center;
-    line-height: 30px; /* Center text vertically */
-    border-radius: 50%; /* Circular button */
+    line-height: 30px;
+    border-radius: 50%;
     cursor: pointer;
-    font-size: 20px; /* Font size for the × */
+    font-size: 20px; /
 }
 
 /* Heading styles */
 .popup-urComment h1 {
     text-align: center;
-    color: #222; /* Text color */
-    margin: 10px 0; /* Margin for spacing */
-    font-size: 40px; /* Font size for the heading */
+    color: #222; 
+    margin: 10px 0; 
+    font-size: 40px; 
 }
 
 .popup-urComment h2 {
     text-align: center;
-    color: #222; /* Text color */
-    margin: 10px 0; /* Margin for spacing */
-    font-size: 35px; /* Font size for the subheading */
+    color: #222; 
+    margin: 10px 0;
+    font-size: 35px; 
 }
 
 /* Box content styles */
 .popup-urComment .box-content {
-    margin-top: 20px; /* Margin from the top */
-    padding: 10px; /* Padding inside the box */
-    border: 1px solid #aaa; /* Border color */
-    border-radius: 5px; /* Rounded corners */
-    background: #f9f9f9; /* Background color */
+    margin-top: 20px; 
+    padding: 10px; 
+    border: 1px solid #aaa; 
+    border-radius: 5px; 
+    background: #f9f9f9; 
 }
 
 
-.popup-urComment .comment-box strong {
-    font-size: 20px; /* Author name styling */
-    color: #333; /* Darker text color for the author name */
+.popup-urComment .comment-box strong { /* Author name styling */
+    font-size: 20px; 
+    color: #333; 
 }
 
-.popup-urComment .comment-box p {
+.popup-urComment .comment-box p { /* Message styling */
     text-align: left;
-    font-size: 15px; /* Message styling */
-    color: #555; /* Lighter text color for the message */
-    margin: 5px 0 20px; /* Add some margin between the author and message */
+    font-size: 15px; 
+    color: #555; 
+    margin: 5px 0 20px; 
 }
+
 .popup-urComment .load-more {
     margin-top: 15px;
     width: 100%;
