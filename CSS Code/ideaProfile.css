@@ -1,4 +1,5 @@
-*{
+
+*{/*Universal selector which means this is something our default style to all. It selects all elements on the page, meaning any style applied to * will affect every element in the document.*/
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -8,25 +9,31 @@
     list-style: none;
     text-decoration: none;
 }
+
+
 /* Variables */
 :root{
+
+    /*This are for colors that we use so that instead of declaring ng pa isa-isa we can just call it using the var() function.  It allows you to use previously defined values throughout our CSS*/
     --main-color: #f4347f;
     --second-color: #edeae3;
     --text-color: #1b1b1b;
     --bg-color: #fff;
 
-    /* Box Shadow */
+     /*This is for box-shadow that we use so that instead of declaring ng pa isa-isa we can just call it using the var() function.  It allows you to use previously defined values throughout our CSS*/
     --box-shadow:2px 2px 10px 4px rgb(14 55 54 / 15%);
 }
-section{
+
+section{ /*The overall section of our website*/
     padding: 50px 100px;
 }
  
-img{
+img{ /*The defined width of all our image*/
     width: 100%;
 }
 
 
+/*Our header design starts here*/
 header {
     position: fixed;
     width: 100%;
@@ -43,10 +50,10 @@ header {
 header h3 {
     color: var(--second-color);
 }
+/*Our header design ends here*/
 
 
-
-/*Navbar design starts here*/
+/*Our Navbar design starts here. Dito nakapaloob yung mga other section natin such as the members, profile, comments, and others*/
 .navbar {
     display: none; /* Initially hidden */
     position: fixed;
@@ -83,7 +90,7 @@ header h3 {
 }
 
 
-.hamburger {
+.hamburger { /*The hamburger design is responsible for toogling our Navbar. Para makita natin yung following choices such as the profiles, membersm, and others*/
     display: block; /* Ensure the hamburger is visible */
     cursor: pointer;
 }
@@ -101,7 +108,7 @@ header h3 {
     display: flex; /* Show the navbar when nav--open class is added */
 }
 
-/*hamburger open is responsible for X */
+/*hamburger open is responsible for X which is X is responsible for closing the navbar*/
 .hamburger--open .bar:nth-child(1) {            /*Slant the first hamburger*/
     transform: translateY(7px) rotate(45deg);
 }
@@ -113,16 +120,17 @@ header h3 {
 .hamburger--open .bar:nth-child(3) {           /*Slant the first hamburger*/
     transform: translateY(-7px) rotate(-45deg);
 }
+/*Our Navbar design ends here*/
 
 
-/*Popup login design starts here*/
+/*Our Popup login design starts here. This is responsible for styling our login section. Based on the design our login section is a popup meaning nag aapear lang within the mainpage. And its above other content*/
 .popup {
     display: none; /* Hide the popup by default */
-    position: fixed; /* Use fixed positioning to allow it to move with the user's scroll */
+    position: fixed;
     opacity: 0;
-    top: 50%; /* Default position in the middle of the viewport */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%) scale(1.25); /* Center and scale */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%) scale(1.25); 
     width: 450px;
     height: 600px;
     padding: 20px 30px;
@@ -221,6 +229,7 @@ small {
     color: #1a79ca;
     text-decoration: none;
 }
+/*Our Popup login ends here*/
 
 /*Popup comment design starts here*/
 .popup-comment {
@@ -323,6 +332,7 @@ small {
     color: #1a79ca;
     text-decoration: none;
 }
+/*Our Comment design ends here*/
 
 /*Home design starts here*/
 .home{
@@ -360,7 +370,7 @@ small {
 }
 
 
-/*Members design starts here*/
+/*Our Members design starts here*/
 .heading{
     text-align: center;
 }
@@ -371,11 +381,11 @@ small {
 }
 
 .members .members-container {
-    display: flex; /* Use flexbox for horizontal layout */
-    flex-wrap: wrap; /* Allow wrapping to keep items in one line */
-    gap: 1rem; /* Space between boxes */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 1rem; 
+    align-items: center; 
+    justify-content: center; 
     margin-top: 2rem;
 }
 
@@ -439,6 +449,7 @@ small {
     background-color: #e794a6;
 }
 /*Members design ends here*/
+
 
 /*Profile design starts here*/
 .heading h2 {
@@ -534,7 +545,7 @@ small {
 .hidden {
     display: none;
 }
-
+/*Profile design ends here*/
 
 /*Others design starts here*/
 .others{
@@ -589,9 +600,8 @@ small {
 }
 
 
-/*social links design starts here*/
+/*This is responsible for designing our knowledge status*/
 .container-details {
-
     display: none;
     
 }
@@ -672,8 +682,9 @@ small {
     font-family: cursive;
     text-transform: uppercase;
 }
-/*Social design ends here*/
+/*Knowledge status design ends here*/
 
+/*Our footer design starts here*/
 .footerContainer{
     width: 100%;
     
@@ -736,9 +747,10 @@ small {
     text-align: center; /* Center-aligns text */
     margin-top: 15px; /* Space from Contact section */
   }
-/*footer design ends here*/
+/*Footer design ends here*/
 
-@media(max-width: 568px) {
+/*For our website responsiveness*/
+@media(max-width: 568px) { /*Once the layout of the device set to 568px, the following design is set to true*/
     .home h1{
         font-size: 2.5rem;
      }
@@ -849,7 +861,7 @@ small {
 
 }
 
-@media(max-width: 450px) {
+@media(max-width: 450px) {  /*Once the layout of the device set to 450px, the following design is set to true*/
     .home {
         min-height: 70vh;
     }
@@ -962,7 +974,7 @@ small {
         height: 570px;
     }
 }
-@media(max-width: 360px) {
+@media(max-width: 360px) { /*Once the layout of the device set to 360px, the following design is set to true*/
     .home {
         min-height: 85vh;
     }
