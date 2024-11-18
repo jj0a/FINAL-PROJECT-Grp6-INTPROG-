@@ -110,6 +110,7 @@ small {
     text-align: center;
 }
 /*Our signup design starts here*/
+/*For sign-up responsiveness*/
 @media(max-width: 836px) {
     .popup {
         width: 400px;
